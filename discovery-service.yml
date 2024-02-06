@@ -5,3 +5,6 @@ eureka:
   client:
     fetch-registry: false
     register-with-eureka: false
+
+  username: ${EUREKA_USERNAME:root_fuji}
+  password: ${EUREKA_PASSWORD:1234}
