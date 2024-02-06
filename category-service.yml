@@ -20,3 +20,16 @@ spring:
           dialect: org.hibernate.dialect.MySQL5Dialect
           format_sql: true
     show_sql: true
+
+  security:
+    oauth2:
+      resourceServer:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/quiz-tech
+          jwk-set-url: ${spring.security.oauth2.resourceServer.jwt.issuer-uri}/protocol/openid-connect/certs
+
+jwt:
+  auth:
+    converter:
+      resource-id: quiz-front
+      principal-attribute: preferred_name
