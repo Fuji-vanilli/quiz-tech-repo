@@ -33,3 +33,8 @@ jwt:
     converter:
       resource-id: quiz-front
       principal-attribute: preferred_name
+
+other:
+  service:
+    url:
+      quiz: http://localhost:6110/api/quiz/get
