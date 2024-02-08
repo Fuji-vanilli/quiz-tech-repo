@@ -1,0 +1,13 @@
+server:
+  port: 6120
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root_fuji:1234@localhost:8761/eureka
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/QUIZ-QUESTION-DB
