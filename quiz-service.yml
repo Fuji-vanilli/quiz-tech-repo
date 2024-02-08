@@ -27,4 +27,4 @@ jwt:
 other:
   service:
     url:
-      category-url-patch: http://localhost:6100/api/cateogry/addQuiz
+      category-url-patch: http://localhost:6100/api/category/addQuiz
