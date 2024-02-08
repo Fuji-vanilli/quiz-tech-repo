@@ -23,3 +23,8 @@ jwt:
     converter:
       resource-id: quiz-front
       principal-attribute: preferred_name
+
+other:
+  service:
+    url:
+      quiz-url-get: http://localhost:6100/api/cateogry/addQuiz
