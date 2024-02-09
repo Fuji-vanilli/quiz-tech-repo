@@ -29,3 +29,4 @@ other:
   service:
     url:
       url-quiz-get: http://localhost:6110/api/quiz/get
+      url-quiz-add-from-question: http://localhost:6110/api/quiz/addQuestion
