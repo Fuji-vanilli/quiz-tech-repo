@@ -29,3 +29,4 @@ other:
     url:
       category-url-get: http://localhost:6100/api/category/get
       category-url-patch: http://localhost:6100/api/category/addQuiz
+      question-url-byQuiz: http://localhost:6120/api/question/byQuiz
