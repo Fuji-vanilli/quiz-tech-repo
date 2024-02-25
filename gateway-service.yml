@@ -5,3 +5,17 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://root_fuji:1234@localhost:8761/eureka
+
+spring:
+  security:
+    oauth2:
+      resourceServer:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/quiz-tech
+          jwk-set-url: ${spring.security.oauth2.resourceServer.jwt.issuer-uri}/protocol/openid-connect/certs
+
+jwt:
+  auth:
+    converter:
+      resource-id: quiz-front
+      principal-attribute: preferred_name
