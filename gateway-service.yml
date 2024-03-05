@@ -28,7 +28,7 @@ spring:
         - id: category-service
           uri: http://localhost:6100/
           predicates:
-            - Path= api/category/**
+            - Path=/api/category/**
 
         - id: question-service
           uri: http://localhost:6120
