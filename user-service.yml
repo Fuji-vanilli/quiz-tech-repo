@@ -1,0 +1,27 @@
+server:
+  port: 6140
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/USER-QT-DB
+
+  security:
+    oauth2:
+      resourceServer:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/quiz-tech
+          jwk-set-url: ${spring.security.oauth2.resourceServer.jwt.issuer-uri}/protocol/openid-connect/certs
+
+jwt:
+  auth:
+    converter:
+      resource-id: front-quiz
+      principal-attribute: preferred_name
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://fuji_root@1234:localhost:8761/eureka/
+
+
