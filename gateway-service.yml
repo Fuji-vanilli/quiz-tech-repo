@@ -25,7 +25,7 @@ spring:
             allowedHeaders: "*"
 
       routes:
-        - id: category-service
+        - id: category
           uri: http://localhost:6100/
           predicates:
             - Path=/api/category/**
