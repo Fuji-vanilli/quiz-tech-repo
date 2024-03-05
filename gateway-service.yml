@@ -17,18 +17,11 @@ spring:
 
   cloud:
     gateway:
-      globalCors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigin: "*"
-            allowedMethods: "*"
-            allowedHeaders: "*"
-
       routes:
         - id: category
           uri: http://localhost:6100/
           predicates:
-            - Path=/api/category/**
+            - Path=/api/category/all
 
         - id: question-service
           uri: http://localhost:6120
