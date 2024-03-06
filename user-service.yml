@@ -25,3 +25,7 @@ eureka:
       defaultZone: http://root_fuji:1234@localhost:8761/eureka/
 
 
+image:
+  storage:
+    local:
+      directory: E:\PROJECT\exam-quiz\front-quiz\src\assets
