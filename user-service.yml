@@ -29,3 +29,8 @@ image:
   storage:
     local:
       directory: E:\PROJECT\exam-quiz\front-quiz\src\assets
+
+web:
+  client:
+    url:
+      result-quiz: http://localhost:6130/api/result
