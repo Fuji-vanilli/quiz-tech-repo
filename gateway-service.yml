@@ -19,6 +19,10 @@ spring:
 
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+          
       routes:
         - id: category
           uri: http://localhost:6100/
