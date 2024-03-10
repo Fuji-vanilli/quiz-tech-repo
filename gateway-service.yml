@@ -22,7 +22,17 @@ spring:
       discovery:
         locator:
           enabled: true
-          
+
+      globalCors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+            exposeHeaders: "Authorization"
+            allowCredentials: true
+            maxAge: 1800
+
       routes:
         - id: category
           uri: http://localhost:6100/
