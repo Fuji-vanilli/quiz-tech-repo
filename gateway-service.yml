@@ -22,19 +22,18 @@ spring:
       discovery:
         locator:
           enabled: true
-
-      globalCors:
-        cors-configurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowedHeaders: "*"
-            allowedMethods: "*"
-
       routes:
         - id: category
           uri: lb://CATEGORY-SERVICE
           predicates:
             - Path=/api/category/**
+          metadata:
+            cors:
+              allowedOrigins: '*'
+              allowedMethods:
+                - GET
+                - POST
+              allowedHeaders: '*'
         - id: quiz
           uri: lb://QUIZ-SERVICE
           predicates:
