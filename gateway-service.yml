@@ -34,7 +34,7 @@ spring:
               - POST
               - PATCH
               - PUT
-
+              - OPTIONS
 
       routes:
         - id: category
