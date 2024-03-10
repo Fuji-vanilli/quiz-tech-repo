@@ -27,17 +27,20 @@ spring:
 
       routes:
         - id: category
-          uri: http://localhost:6100/
+          uri: lb://CATEGORY-SERVICE
           predicates:
-            - Path=/api/category/all
-
+            - Path=/api/category/**
+        - id: quiz
+          uri: lb://QUIZ-SERVICE
+          predicates:
+            - Path=/api/quiz/**
         - id: question-service
-          uri: http://localhost:6120
+          uri: lb://QUESTION-SERVICE
           predicates:
             - Path= /api/question/**
 
         - id: result-quiz-service
-          uri: http://localhost:6130
+          uri: lb://RESULT-QUIZ-SERVICE
           predicates:
             - Path= /api/result/**
 
