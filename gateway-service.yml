@@ -24,9 +24,9 @@ spring:
           enabled: true
 
       globalCors:
-        corsConfigurations:
+        cors-configurations:
           '[/**]':
-            allowedOrigins: "http://localhost:4200/**"
+            allowedOrigins: "*"
             allowedHeaders: "*"
             allowedMethods: "*"
 
