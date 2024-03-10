@@ -22,7 +22,13 @@ spring:
       discovery:
         locator:
           enabled: true
-
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+            
       routes:
         - id: category
           uri: lb://CATEGORY-SERVICE
