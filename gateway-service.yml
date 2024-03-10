@@ -26,9 +26,14 @@ spring:
         corsConfigurations:
           '[/**]':
             allowedOrigins: "*"
-            allowedMethods: "*"
             allowedHeaders: "*"
-            
+            allowedMethods:
+              - GET
+              - POST
+              - PATCH
+              - PUT
+
+
       routes:
         - id: category
           uri: lb://CATEGORY-SERVICE
