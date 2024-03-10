@@ -23,12 +23,7 @@ spring:
         locator:
           enabled: true
 
-      globalCors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowedMethods: "*"
-            allowedHeaders: "*"
+
 
       routes:
         - id: category
