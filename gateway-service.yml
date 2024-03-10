@@ -30,7 +30,6 @@ spring:
             allowedMethods: "*"
             allowedHeaders: "*"
             exposedHeaders: "Authorization"
-            allowCredentials: true
             maxAge: 1800
 
       routes:
