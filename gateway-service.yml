@@ -29,9 +29,7 @@ spring:
             allowedOrigins: "*"
             allowedMethods: "*"
             allowedHeaders: "*"
-            exposedHeaders: "Authorization"
-            maxAge: 1800
-
+            
       routes:
         - id: category
           uri: http://localhost:6100/
