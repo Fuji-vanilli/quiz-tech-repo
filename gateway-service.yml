@@ -23,8 +23,6 @@ spring:
         locator:
           enabled: true
 
-
-
       routes:
         - id: category
           uri: lb://CATEGORY-SERVICE
@@ -38,11 +36,14 @@ spring:
           uri: lb://QUESTION-SERVICE
           predicates:
             - Path= /api/question/**
-
         - id: result-quiz-service
           uri: lb://RESULT-QUIZ-SERVICE
           predicates:
             - Path= /api/result/**
+        - id: user-service
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/user/**
 
 
 
