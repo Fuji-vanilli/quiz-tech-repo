@@ -17,7 +17,7 @@ jwt:
   auth:
     converter:
       resource-id: front-quiz
-      principal-attribute: preferred_name
+      principal-attribute: preferred_username
 
 eureka:
   client:
