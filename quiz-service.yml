@@ -22,7 +22,7 @@ jwt:
   auth:
     converter:
       resource-id: quiz-front
-      principal-attribute: preferred_name
+      principal-attribute: preferred_username
 
 other:
   service:
