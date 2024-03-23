@@ -31,6 +31,8 @@ spring:
           uri: lb://QUIZ-SERVICE
           predicates:
             - Path=/api/quiz/**
+          filters:
+            - Cors=allowedOrigins=http://localhost:4200,allowedMethods=GET,POST,PUT,DELETE,OPTIONS,allowedHeaders=*,allowCredentials=true
         - id: question-service
           uri: lb://QUESTION-SERVICE
           predicates:
