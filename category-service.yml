@@ -29,3 +29,8 @@ other:
     url:
       quiz-url-get: http://localhost:6110/api/quiz/get
       quiz-url-category: http://localhost:6110/api/quiz/getByCategory
+
+image:
+  storage:
+    local:
+      directory: E:\PROJECT\exam-quiz\front-quiz\src\assets
