@@ -1,6 +1,10 @@
 server:
   port: 6100
 
+  tomcat:
+    max-http-post-size: 10485760
+    max-http-patch-siz: 10485760
+
 eureka:
   client:
     serviceUrl:
