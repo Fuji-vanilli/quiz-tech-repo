@@ -22,5 +22,5 @@ spring:
 jwt:
   auth:
     converter:
-      resourceId: front-quiz
-      principalAttribute: preferred_name
+      resource-id: front-quiz
+      principal-attribute: preferred_username
