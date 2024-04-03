@@ -1,0 +1,8 @@
+server:
+  port: 6150
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root_fuji:1234@locahost:87961/eureka
+
