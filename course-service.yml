@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://root_fuji:1234@locahost:87961/eureka
+      defaultZone: http://root_fuji:1234@locahost:8761/eureka
 
 
 spring:
