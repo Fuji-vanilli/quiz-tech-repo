@@ -1,0 +1,12 @@
+server:
+  port: 6200
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root_fuji:1234@localhost:8761/eureka
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/CATEGORY-DB-TEST
