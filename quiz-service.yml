@@ -9,7 +9,7 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb://quiz-mongodb:27017/QUIZ-DB
+      uri: mongodb://ixml:1234@quiz-mongodb:27017/QUIZ-DB
 
   security:
     oauth2:
