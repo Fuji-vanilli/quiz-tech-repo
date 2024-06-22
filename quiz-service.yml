@@ -9,13 +9,13 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/QUIZ-DB
+      uri: mongodb://quiz-mongodb:27017/QUIZ-DB
 
   security:
     oauth2:
       resourceServer:
         jwt:
-          issuer-uri: http://localhost:8080/realms/quiz-tech
+          issuer-uri: http://localhost:9090/realms/quiz-tech
           jwk-set-url: ${spring.security.oauth2.resourceServer.jwt.issuer-uri}/protocol/openid-connect/certs
 
 jwt:
