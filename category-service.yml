@@ -13,6 +13,7 @@ eureka:
 spring:
   data:
     mongodb:
+      authentication-database: admin
       host: ${SPRING_DATA_MONGODB_HOST:localhost}
       port: ${SPRING_DATA_MONGODB_PORT:27017}
       username: ${SPRING_DATA_MONGODB_USERNAME:ixml}
