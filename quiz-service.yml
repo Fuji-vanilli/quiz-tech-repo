@@ -38,4 +38,4 @@ other:
 image:
   storage:
     local:
-      directory: G:\PROJECT\exam-quiz\front-quiz\src\assets
+      directory: /home/PROJECT
