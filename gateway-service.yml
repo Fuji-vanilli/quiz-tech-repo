@@ -14,7 +14,7 @@ spring:
       resourceServer:
         jwt:
           issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8080/realms/quiz-tech}
-          jwk-set-url: ${KEYCLOAK_KEY_URL:http://localhost:8080/realms/quiz-tech/protocol/openid-connect/certs}
+          #jwk-set-url: ${KEYCLOAK_KEY_URL:http://localhost:8080/realms/quiz-tech/protocol/openid-connect/certs}
 
 
   cloud:
