@@ -9,12 +9,7 @@ eureka:
 spring:
   data:
     mongodb:
-      host: ${SPRING_DATA_MONGODB_HOST:localhost}
-      port: ${SPRING_DATA_MONGODB_PORT:27017}
-      database: ${SPRING_DATA_MONGODB_DATABASE:QUIZ-DB}
-      username: ${SPRING_DATA_MONGODB_USERNAME:ixml}
-      password: ${SPRING_DATA_MONGODB_PASSWORD:1234}
-      authentication-database: admin
+      uri: mongodb://mongodb-quiz/27017/QUIZ-DB
 
   security:
     oauth2:
