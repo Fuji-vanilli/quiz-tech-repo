@@ -14,8 +14,8 @@ eureka:
     oauth2:
       resourceServer:
         jwt:
-          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8080/realms/quiz-tech}
-          jwk-set-url: ${KEYCLOAK_KEY_URL:http://localhost:8080/protocol/openid-connect/certs}
+          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8080/realms/q-learning-realm}
+          jwk-set-url: ${KEYCLOAK_KEY_URL:http://localhost:8080/realms/q-learning-realm/protocol/openid-connect/certs}
 
 jwt:
   auth:
