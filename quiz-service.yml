@@ -6,11 +6,6 @@ eureka:
     serviceUrl:
       defaultZone: ${DISCOVERY_SERVER_URL:http://root_fuji:1234@localhost:8761/eureka}
 
-spring:
-  data:
-    mongodb:
-      uri: mongodb://mongodb-quiz/27017/QUIZ-DB
-
   security:
     oauth2:
       resourceServer:
