@@ -24,7 +24,6 @@ eureka:
     serviceUrl:
       defaultZone: http://root_fuji:1234@localhost:8761/eureka/
 
-
 image:
   storage:
     local:
