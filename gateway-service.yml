@@ -6,15 +6,15 @@ eureka:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: http://root_fuji:1234@localhost:8761/eureka
+      defaultZone: ${DISCOVERY_SERVER_URL:http://root_fuji:1234@localhost:8761/eureka}
 
 spring:
   security:
     oauth2:
       resourceServer:
         jwt:
-          issuer-uri: http://localhost:8080/realms/quiz-tech
-          jwk-set-url: ${spring.security.oauth2.resourceServer.jwt.issuer-uri}/protocol/openid-connect/certs
+          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8080/realms/quiz-tech}
+          #jwk-set-url: ${KEYCLOAK_KEY_URL:http://localhost:8080/realms/quiz-tech/protocol/openid-connect/certs}
 
 
   cloud:

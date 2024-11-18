@@ -4,19 +4,14 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://root_fuji:1234@localhost:8761/eureka
-
-spring:
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/QUIZ-DB
+      defaultZone: ${DISCOVERY_SERVER_URL:http://root_fuji:1234@localhost:8761/eureka}
 
   security:
     oauth2:
       resourceServer:
         jwt:
-          issuer-uri: http://localhost:8080/realms/quiz-tech
-          jwk-set-url: ${spring.security.oauth2.resourceServer.jwt.issuer-uri}/protocol/openid-connect/certs
+          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:9090/realms/quiz-tech}
+          #jwk-set-url: ${KEYCLOAK_KEY_URL:http://localhost:9090/realms/quiz-tech/protocol/openid-connect/certs}
 
 jwt:
   auth:
@@ -34,4 +29,4 @@ other:
 image:
   storage:
     local:
-      directory: G:\PROJECT\exam-quiz\front-quiz\src\assets
+      directory: /home/PROJECT
