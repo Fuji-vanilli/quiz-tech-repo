@@ -1,5 +1,5 @@
 server:
-  port: 6100
+  port: 6200
 
   tomcat:
     max-http-post-size: 10485760
@@ -8,7 +8,12 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${DISCOVERY_SERVER_URL:http://root_fuji:1234@localhost:8761/eureka}
+      defaultZone: http://root_fuji:1234@localhost:8761/eureka
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/CATEGORY-DB-TEST
 
   security:
     oauth2:
