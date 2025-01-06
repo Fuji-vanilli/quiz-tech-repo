@@ -15,5 +15,11 @@ spring:
     oauth2:
       resourceServer:
         jwt:
-          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8080/realms/quiz-tech}
-          jwk-set-url: ${KEYCLOAK_KEY_URL:http://localhost:8080/realms/quiz-tech/protocol/openid-connect/certs}
+          issuer-uri: http://localhost:8080/realms/quiz-tech
+          jwk-set-url: ${spring.security.oauth2.resourceServer.jwt.issuer-uri}/protocol/openid-connect/certs
+
+jwt:
+  auth:
+    converter:
+      resource-id: front-quiz
+      principal-attribute: preferred_username
